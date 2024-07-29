@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-image: url('../../assets/1jumbo.jpg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:0px;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #000000;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    /* width: 100vw; */
+}
+
+article{
+    width : 75%;
+}
+
+aside{
+    width: 25%;
+}
+
+/* article, aside {
+    flex: 1;
+} */
+
+.fish-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.fish {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    /* flex-basis: calc(33.333% - 20px); */
+}
+
+.fish img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    item-fit: cover;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.aside-content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.aside-content img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Add to Cart button styling */
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Add spacing above the button */
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+  /* Shopping cart icon styling */
+.shopping-cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.shopping-cart-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+table, tr, td {
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        
+    }
+    
+    .article{
+        align-items: center;
+        width : 100%;
+    }
+
+    .freshwater-fishes {
+        display:flex;
+        flex-direction: column;
+        /* align-items: center; */
+        width: 100%
+    }
+
+    .saltwater-fishes {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        width: 100%
+    }
+
+    aside {
+        align-items: center;
+        width: 100%
+    }
+}
